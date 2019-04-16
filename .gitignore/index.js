@@ -9,6 +9,12 @@ bot.on("ready", function() {
     console.log("Le bot a bien et connecte");
 });
 
+client.on('message', msg => {
+    if (msg.content === 'ping') {
+      msg.reply('Pong!');
+    }
+});
+
 bot.on("message", async function(message) {
     if (message.auhor.equals(bot.user)) return;
 
@@ -18,7 +24,7 @@ bot.on("message", async function(message) {
 
     switch(args[0].toLowerCase()) {
         case "invite":
-            message.channel.send("Test");
+        message.channel.send("Test");
         break;
     }
 });
