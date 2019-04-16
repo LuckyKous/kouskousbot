@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '$help') {
-    msg.reply('Commandes :','$help : Aide);
+  if (msg.content === 'KKB_help') {
+    msg.reply('Commandes :','KKB_help : Aide);
   }
 });
 
