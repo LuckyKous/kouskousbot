@@ -12,7 +12,7 @@ bot.on("ready", function() {
 bot.on("message", async function(message) {
     if (message.auhor.equals(bot.user)) return;
 
-    if(!message.content.startWith(PREFIX)) return;
+    if(!message.content.startsWith(PREFIX)) return;
 
     var args = message.content.substring(PREFIX.length).split(" ");
 
