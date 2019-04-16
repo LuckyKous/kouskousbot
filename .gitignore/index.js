@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 var PREFIX = "!";
 
-var bot = new Discord.Client();
+const bot = new Discord.Client();
 
 bot.on("ready", function() {
     bot.user.setGame("Le couscous, c'est bon !");
